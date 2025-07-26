@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal: #007f4e;
+  --color-secundario: 	#f0fff0;
+  --color-texto: #222;
+  --color-hover: #00965e;
+  --color-blanco: 	#ffff;
+  --color-perfumeria: #f8bbd0;
+  --color-genericos: 	#bbdefb;
+}
+
+
+body {
+  background-color: var(--color-secundario); 
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--color-texto);
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+
+header {
+  background-color: var(--color-principal); 
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+   font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+
+nav ul {
+  list-style: none;
+  background-color: var(--color-principal);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav a:hover{
+  background-color:var(--color-hover);
+  border-radius: 5px;
+}
+
+main{
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+footer{
+  background-color: var(--color-principal); 
+  margin-top: 40px;
+  text-align: center;
+  color: var(--color-blanco);
+  padding: 15px;
+
+}
+
+img{
+  background-color: var(--color-secundario);
+  border-radius: 10px;
+  padding: 10px;
+   margin-top: 10px;
+
+}
+
+p{
+  margin-top: 20px;
+}
+
+h3{
+  margin-top: 15px;
+}
+
+
+section{
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px
+}
+
+.medicamentos{
+  background-color: #f6fef9;
+  border-left: 5px solid var(--color-principal);
+ 
+}
+
+.medicamentos h3 {
+  color: var(--color-principal);
+  font-size: 28px;
+}
+
+.perfumeria{
+  background-color: var(--color-perfumeria);
+  color: var(--color-texto);
+}
+.perfumeria h3{
+  color: var(--color-blanco);
+  font-size: 28px;
+}
+
+.genericos{
+  background-color: var(--color-genericos);
+  color: var(--color-texto);
+}
+
+.genericos h3{
+color: var(--color-blanco);
+font-size: 28px;
+}
+
+.ofertas{
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.ofertas h3 {
+  color: var(--color-principal);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.grid-ofertas img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-ofertas:hover{
+  transform: scale(1.05);
+}
+
+.bienvenida{
+  background-color: var(--color-secundario);
+  border: 7px solid var(--color-texto);
+  border-radius: 20px;
+  padding:30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+}
+
+.bienvenida :hover{
+  transform: scale(1.02);
+}
+
+.bienvenida h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.historia{
+  background-color: var(--color-secundario);
+  border: 7px solid var(--color-texto);
+  border-radius: 20px;
+  padding:30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+}
+
+.historia :hover{
+  transform: scale(1.02);
+}
+
+.historia h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.valores{
+  background-color: var(--color-secundario);
+  border: 7px solid var(--color-texto);
+  border-radius: 20px;
+  padding:30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+}
+
+.valores :hover{
+  transform: scale(1.02);
+}
+
+.valores h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+
+.obras-sociales{
+  background-color: var(--color-secundario);
+  border: 7px solid var(--color-texto);
+  border-radius: 20px;
+  padding:50px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+}
+
+.obras-sociales :hover{
+  transform: scale(1.02);
+}
+
+.obras-sociales h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+
+.telefono{
+  background-color: var(--color-texto);
+  border: 7px solid var(--color-principal);
+  border-radius: 20px;
+  padding:30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+  color: var(--color-blanco);
+}
+
+.telefono :hover{
+  transform: scale(1.02);
+}
+
+.telefono h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.ubicacion{
+  background-color: var(--color-texto);
+  border: 7px solid var(--color-principal);
+  border-radius: 20px;
+  padding:30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+  color: var(--color-blanco);
+}
+
+.ubicacion :hover{
+  transform: scale(1.02);
+}
+
+.ubicacion h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.email{
+  background-color: var(--color-texto);
+  border: 7px solid var(--color-principal);
+  border-radius: 20px;
+  padding:30px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: transform 0.3 ease;
+  color: var(--color-blanco);
+}
+
+.email :hover{
+  transform: scale(1.02);
+}
+
+.email h2 {
+  color: var(--color-principal);
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 767px){
+  nav ul{
+    flex-direction: column;
+    padding: 0;
+  }
+  av li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grid-ofertas {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en celular */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+
