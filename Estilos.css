@@ -12,6 +12,7 @@
   --color-blanco: 	#ffff;
   --color-perfumeria: #f8bbd0;
   --color-genericos: 	#bbdefb;
+  --color-columnas:#eafaf0;
 }
 
 
@@ -160,6 +161,13 @@ font-size: 28px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+}
+
+.grid-ofertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ajusta columnas */
+  gap: 20px;
+  justify-items: center;
 }
 
 .grid-ofertas:hover{
@@ -361,4 +369,40 @@ font-size: 28px;
   }
 }
 
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.grid-nosotros .columna {
+    background-color: #eafaf0; /* opcional */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .grid-nosotros {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tres columnas iguales */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-contacto .columna {
+    padding: 15px;
+    background-color: #eafaf0; /* opcional */
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .grid-contacto {
+        grid-template-columns: 1fr; /* se apilan en móvil */
+    }
+}
 
